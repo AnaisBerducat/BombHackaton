@@ -1,0 +1,32 @@
+CREATE DATABASE Bombhackaton;
+
+USE Bombhackaton;
+
+CREATE TABLE user(
+  id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  firstname VARCHAR(50) NOT NULL,
+  lastname VARCHAR(60) NOT NULL,
+  email VARCHAR(45) NOT NULL,
+  age INT NOT NULL,
+  sex VARCHAR(10),
+  planet_id INT NOT NULL,
+  password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE planet(
+  id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  name VARCHAR(40)
+);
+
+CREATE TABLE contact (
+  id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  firstname VARCHAR(50) NOT NULL,
+  lastname VARCHAR(50) NOT NULL,
+  subject VARCHAR(100) NOT NULL,
+  message VARCHAR(250) NOT NULL,
+  age INT NOT NULL,
+  sex VARCHAR(10)
+);
+
+
+

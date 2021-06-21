@@ -1,0 +1,86 @@
+{% extends 'layout.html.twig' %}
+{% block title %} - Login{% endblock %}
+{% block content %}
+<div class="frame">
+    <div class="login-wrap">
+        <div class="login-html">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Register</label>
+            <div class="login-form">
+                <div class="sign-in-htm">
+                    <div class="group">
+                        <label for="user" class="label">Email</label>
+                        <input id="user" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Password</label>
+                        <input id="pass" type="password" class="input" data-type="password">
+                    </div>
+                    <div class="group">
+                        <input id="check" type="checkbox" class="check" checked>
+                        <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                    </div>
+                    
+                    <div class="group">
+                        <input type="submit" class="button" value="Sign In">
+                    </div>
+
+                </div>
+                <div class="sign-up-htm">
+                    <div class="group">
+                        <label for="firstname" class="label">Firstname</label>
+                        <input id="firstname" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="lastname" class="label">Lastname</label>
+                        <input id="lastname" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="password" class="label">Password</label>
+                        <input id="password" type="password" class="input" data-type="password">
+                    </div>
+                    <div class="group">
+                        <label for="password2" class="label">Repeat Password</label>
+                        <input id="password2" type="password2" class="input" data-type="password2">
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Email Address</label>
+                        <input id="pass" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="image" class="label">Image</label>
+                        <input id="image" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="age" class="label">Age</label>
+                        <input id="age" type="number" class="input">
+                    </div>
+                    <div class="group text-center">
+                        <select>
+                            <option selected>Choose your sex</option>
+                                    <option value="1">Male</option>
+                                    <option value="2">Female</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="group text-center">
+                        <select>
+                            <option selected>Choose your planet</option>
+                                    <option value="1">Mars</option>
+                                    <option value="2">Earth</option>
+                        </select>
+                    </div>
+                    
+                    <div class="group">
+                        <label for="button" class="label"></label>
+                        <button type="submit" class="button" value="Sign Up">Sign Up</button>
+                    </div>
+                    <div class="foot-lnk">
+                        <label for="tab-1">Already Member?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
